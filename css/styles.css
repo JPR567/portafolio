@@ -36,8 +36,8 @@ body {
 }
 
 .side-nav .profile-pic {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid #00adb5;
@@ -54,14 +54,14 @@ body {
 }
 
 .side-nav .name {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
 }
 
 .side-nav .role {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #00adb5;
     margin-top: 5px;
 }
@@ -268,6 +268,20 @@ section p {
     .content {
         margin-left: 0;
     }
+
+    /* Reducción del tamaño de la foto de perfil en pantallas pequeñas */
+    .side-nav .profile-pic {
+        width: 70px;
+        height: 70px;
+    }
+
+    .side-nav .name {
+        font-size: 1em;
+    }
+
+    .side-nav .role {
+        font-size: 0.75em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -282,61 +296,26 @@ section p {
     .project-item p {
         font-size: 0.8rem;
     }
-}
 
-/* Skills Section */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+    /* Ajustes adicionales para el sidebar */
+    .side-nav {
+        padding: 20px;
+    }
 
-.skills-icons,
-.skills-methods {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    flex: 1;
-    min-width: 270px;
-}
+    .side-nav .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
 
-.skills-icons li,
-.skills-methods li {
-    font-size: 1.3em;
-    color: #eaeaea;
-    margin: 10px 0;
-}
+    .side-nav .name {
+        font-size: 0.9em;
+    }
 
-.skills-icons li i {
-    margin-right: 12px;
-    color: #00adb5;
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-.social-icons a {
-    font-size: 1.8em;
-    color: #fff;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #00adb5;
-    transform: scale(1.2);
-}
-
-/* Responsive sidebar animation */
-@media (max-width: 768px) {
-    .side-nav.show {
-        transform: translateX(0);
+    .side-nav .role {
+        font-size: 0.7em;
     }
 }
+
 /* Estilos para el formulario */
 form {
     background-color: #f4f4f4;
