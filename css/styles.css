@@ -31,31 +31,37 @@ body {
     align-items: center;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
     z-index: 999;
+    transform: translateX(0);
     transition: transform 0.3s ease;
 }
 
 .side-nav .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border: 3px solid #00adb5;
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-nav .profile-pic:hover {
+    transform: scale(1.1);
 }
 
 .side-nav .name-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .side-nav .name {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
 }
 
 .side-nav .role {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #00adb5;
     margin-top: 5px;
 }
@@ -87,6 +93,18 @@ body {
     transform: translateX(5px);
 }
 
+/* Sidebar Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #00adb5;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 /* Content */
 .content {
     margin-left: 300px;
@@ -96,6 +114,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: margin-left 0.3s ease;
 }
 
 section {
@@ -180,7 +199,8 @@ section p {
 }
 
 .project-item img.project-image {
-    width: 60%;
+    width: 100%;
+    max-width: 160px;
     height: auto;
     margin: 0 auto;
     object-fit: cover;
@@ -192,19 +212,40 @@ section p {
     transform: scale(1.05);
 }
 
-/* Responsive Sidebar Toggle */
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: #00adb5;
-    cursor: pointer;
-    z-index: 1001;
+.project-item h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bold;
 }
 
-/* Media Queries */
+.project-item p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin: 10px 0 20px;
+}
+
+.project-item a {
+    display: inline-block;
+    text-align: center;
+    background-color: #383838;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: auto;
+    width: 100%;
+}
+
+.project-item a:hover {
+    background-color: #008c8a;
+    transform: translateY(-4px);
+}
+
+/* Responsiveness */
 @media (max-width: 1024px) {
     .side-nav {
         width: 250px;
@@ -229,17 +270,71 @@ section p {
     }
 }
 
-/* Animations */
+@media (max-width: 480px) {
+    #projects {
+        padding: 20px;
+    }
+
+    .project-item h3 {
+        font-size: 1rem;
+    }
+
+    .project-item p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-icons,
+.skills-methods {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    flex: 1;
+    min-width: 270px;
+}
+
+.skills-icons li,
+.skills-methods li {
+    font-size: 1.3em;
+    color: #eaeaea;
+    margin: 10px 0;
+}
+
+.skills-icons li i {
+    margin-right: 12px;
+    color: #00adb5;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 1.8em;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00adb5;
+    transform: scale(1.2);
+}
+
+/* Responsive sidebar animation */
 @media (max-width: 768px) {
     .side-nav.show {
         transform: translateX(0);
     }
 }
 
-/* CSS para habilidades */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
