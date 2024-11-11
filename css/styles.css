@@ -33,6 +33,7 @@ body {
     z-index: 999;
     transform: translateX(0);
     transition: transform 0.3s ease;
+    max-width: 300px; /* Limit width for larger screens */
 }
 
 .side-nav .profile-pic {
@@ -254,6 +255,11 @@ section p {
     .content {
         margin-left: 250px;
     }
+
+    .side-nav .profile-pic {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -269,14 +275,13 @@ section p {
         margin-left: 0;
     }
 
-    /* Reducción del tamaño de la foto de perfil en pantallas pequeñas */
     .side-nav .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .side-nav .name {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .side-nav .role {
@@ -297,102 +302,26 @@ section p {
         font-size: 0.8rem;
     }
 
-    /* Ajustes adicionales para el sidebar */
     .side-nav {
+        width: 100%;
         padding: 20px;
     }
 
     .side-nav .profile-pic {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .side-nav .name {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .side-nav .role {
-        font-size: 0.7em;
-    }
-}
-
-/* Estilos para el formulario */
-form {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-form h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    color: #333;
-    background-color: #fff;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
-}
-
-form textarea {
-    resize: vertical;
-}
-
-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    form {
-        padding: 15px;
+        font-size: 0.65em;
     }
 
-    form h2 {
-        font-size: 1.5rem;
-    }
-
-    form input, form textarea {
-        font-size: 0.9rem;
-    }
-
-    form button {
-        font-size: 0.9rem;
+    .content {
+        padding: 20px;
     }
 }
 
