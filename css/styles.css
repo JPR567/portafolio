@@ -33,14 +33,13 @@ body {
     z-index: 999;
     transform: translateX(0);
     transition: transform 0.3s ease;
-    max-width: 300px; /* Limit width for larger screens */
 }
 
 .side-nav .profile-pic {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 3px solid #00adb5;
     transition: transform 0.3s ease-in-out;
 }
@@ -116,6 +115,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: margin-left 0.3s ease;
+    justify-content: center; /* Centering content vertically */
 }
 
 section {
@@ -127,6 +127,7 @@ section {
     width: 100%;
     max-width: 900px;
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Ensure text is centered */
 }
 
 section:hover {
@@ -138,7 +139,6 @@ section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #fff;
-    text-align: center;
 }
 
 section p {
@@ -257,8 +257,8 @@ section p {
     }
 
     .side-nav .profile-pic {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -276,8 +276,8 @@ section p {
     }
 
     .side-nav .profile-pic {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .side-nav .name {
@@ -324,4 +324,5 @@ section p {
         padding: 20px;
     }
 }
+
 
