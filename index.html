@@ -16,6 +16,24 @@
 
 <body id="page-top">
 
+    <!-- Barra lateral (Menú) -->
+    <nav class="side-nav">
+        <a href="#page-top" class="brand">
+            <div class="profile-container">
+                <!-- Imagen del logo en lugar de la foto de perfil -->
+                <img src="img/logo.png" alt="Logo" class="logos"> <!-- Cambia la foto por tu logo -->
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
     <!-- Página de bienvenida -->
     <div id="welcome-section" class="welcome-section">
         <div class="welcome-content">
@@ -28,31 +46,10 @@
                 <a href="https://www.instagram.com/rivadeneirajuanpablo/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/juan-pablo-rivadeneira/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.behance.net/juanparivaden" target="_blank"><i class="fab fa-behance"></i></a>
-                <a href="https://github.com/tu-perfil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/JPR567?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
-
-    <!-- Barra lateral (Menú) -->
-    <nav class="side-nav">
-        <a href="#page-top" class="brand">
-            <div class="profile-container">
-                <!-- Imagen específica para la barra lateral -->
-                <img src="img/yo.jpg" alt="Juan Pablo Rivadeneira Lara" class="profile-pic">
-                <div class="name-container">
-                    <span class="name">Juan Pablo Rivadeneira Lara</span>
-                    <p class="role">Desarrollador Web</p>
-                </div>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#education">Educación</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-        </ul>
-    </nav>
 
     <!-- Contenido principal -->
     <div class="content">
@@ -67,7 +64,7 @@
                 <a href="https://www.instagram.com/rivadeneirajuanpablo/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/juan-pablo-rivadeneira/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.behance.net/juanparivaden" target="_blank"><i class="fab fa-behance"></i></a>
-                <a href="https://github.com/tu-perfil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/JPR567?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </section>
 
@@ -115,7 +112,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="projects">
             <h2>Proyectos</h2>
             <div class="project-item">
@@ -142,7 +139,32 @@
                 <span>Aplicación móvil para la gestión de inventarios</span>
                 <p>Desarrollé "TeleStock", una aplicación móvil que permite a los usuarios gestionar su inventario de manera eficiente.</p>
             </div>
+            <!-- Nuevo Proyecto Journey Planner -->
+            <div class="project-item">
+                <h3>Journey Planner</h3>
+                <a href="https://www.behance.net/gallery/210885183/Journey-Planner" target="_blank"> <!-- Puedes agregar el enlace correcto -->
+                    <img src="img/journeyplanner.jpg" alt="Journey Planner" class="project-image"> <!-- Asegúrate de tener la imagen -->
+                </a>
+                <span>Aplicación web para planificar viajes</span>
+                <p>Desarrollé "Journey Planner", una aplicación web que permite a los usuarios planificar sus viajes de manera eficiente. Los usuarios pueden visualizar vuelos disponibles, destinos, y horarios para organizar su itinerario de viaje de forma sencilla y sin necesidad de realizar compras directamente a través de la aplicación.</p>
+            </div>
         </section>
+        
+
+        <!-- Sección de Contacto -->
+        <section id="contact">
+            <h2>¿Te interesa mi servicio? ¡Contáctame!</h2>
+            <form action="mailto:juanparivadeneira@gmail.com" method="post" enctype="text/plain">
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Introduce tu correo">
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
     </div>
 
     <!-- Scripts personalizados -->
