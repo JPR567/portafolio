@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         welcomeSection.style.display = "none"; // Ocultar la sección completamente
     });
 });
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("show");
+}
+

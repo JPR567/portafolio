@@ -35,9 +35,8 @@
     </nav>
 
     <!-- Página de bienvenida -->
-    <div id="welcome-section" class="welcome-section">
+    <header id="welcome-section" class="welcome-section">
         <div class="welcome-content">
-            <!-- Imagen específica para la bienvenida -->
             <img src="img/yo.jpg" alt="Juan Pablo Rivadeneira Lara" class="profile-pic2">
             <h1>Juan Pablo Rivadeneira Lara</h1>
             <p class="role">Desarrollador Web</p>
@@ -49,17 +48,17 @@
                 <a href="https://github.com/JPR567?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Contenido principal -->
-    <div class="content">
+    <main class="content">
         <section id="about">
             <h1>Juan Pablo <span class="highlight">Rivadeneira Lara</span></h1>
             <p class="contact-info">San Rafael, Quito, Ecuador · 0960733333 · 
                 <a href="mailto:juanparivadeneira@gmail.com">juanparivadeneira@gmail.com</a>
             </p>
             <p>Diseñador y desarrollador web con experiencia en medios interactivos y una pasión por crear soluciones innovadoras para negocios y usuarios.</p>
-            <div class="social-icons2">
+            <div class="social-icons">
                 <a href="https://www.facebook.com/profile.php?id=100005095004725" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/rivadeneirajuanpablo/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/juan-pablo-rivadeneira/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -70,20 +69,20 @@
 
         <section id="experience">
             <h2>Experiencia</h2>
-            <div class="resume-item">
+            <article class="resume-item">
                 <h3>Asistente de Ingeniería en Sistemas</h3>
-                <span>CNS</span>
-                <p>Colaboré en el desarrollo de una aplicación de inventario utilizando Ionic, JavaScript, Node y Firebase. Me enfoqué en mejorar la interfaz de usuario y optimizar la funcionalidad de la aplicación para facilitar el seguimiento de inventarios.</p>
-            </div>
+                <p><strong>Empresa:</strong> CNS</p>
+                <p>Colaboré en el desarrollo de una aplicación de inventario utilizando tecnologías como Ionic, JavaScript, Node y Firebase. Me enfoqué en mejorar la interfaz de usuario y optimizar la funcionalidad de la aplicación.</p>
+            </article>
         </section>
 
         <section id="education">
             <h2>Educación</h2>
-            <div class="resume-item">
+            <article class="resume-item">
                 <h3>Licenciatura en Diseño Gráfico en Medios Interactivos</h3>
-                <span>Universidad San Francisco de Quito</span>
-                <p>Graduado en 2023. Durante mi tiempo en la universidad, desarrollé habilidades en diseño visual, programación web y creación de contenido multimedia.</p>
-            </div>
+                <p><strong>Institución:</strong> Universidad San Francisco de Quito, 2023</p>
+                <p>Desarrollé habilidades en diseño visual, programación web y creación de contenido multimedia.</p>
+            </article>
         </section>
 
         <section id="skills">
@@ -104,10 +103,10 @@
                 <div>
                     <h3>Metodologías de trabajo</h3>
                     <ul class="skills-methods">
-                        <li>Diseño responsive, enfocado en dispositivos móviles</li>
+                        <li>Diseño responsive y enfocado en dispositivos móviles</li>
                         <li>Desarrollo ágil y gestión de proyectos</li>
-                        <li>Consultoría y estrategia de social media</li>
-                        <li>Diseño de interfaces y experiencia de usuario (UI/UX)</li>
+                        <li>Consultoría de social media</li>
+                        <li>Diseño de UI/UX</li>
                     </ul>
                 </div>
             </div>
@@ -115,23 +114,23 @@
 
         <section id="projects">
             <h2>Proyectos</h2>
-            <div class="project-item">
+            <article class="project-item">
                 <h3>At Ease</h3>
                 <a href="https://www.behance.net/gallery/206552113/AT-EASE/modules/1178154171" target="_blank">
                     <img src="img/atease.jpg" alt="At Ease" class="project-image">
                 </a>
-                <span>Aplicación móvil de bienestar mental</span>
-                <p>Desarrollé una aplicación móvil llamada "At Ease", enfocada en el bienestar mental. La aplicación incluye funcionalidades como un diario personal, consejos psicológicos, sesiones de meditación y ejercicios de mindfulness.</p>
-            </div>
-            <div class="project-item">
+                <p>Aplicación móvil para bienestar mental con funcionalidades como diario personal, consejos psicológicos, meditación y ejercicios de mindfulness.</p>
+            </article>
+
+            <article class="project-item">
                 <h3>Gaming Guild</h3>
                 <a href="https://www.behance.net/gallery/207459909/Gaming-Guild" target="_blank">
                     <img src="img/gamingguild.jpg" alt="Gaming Guild" class="project-image">
                 </a>
-                <span>Plataforma para creadores de videojuegos</span>
-                <p>Creé "Gaming Guild", una plataforma web donde los creadores de videojuegos pueden publicar, comentar y descargar videojuegos. Utilicé tecnologías como HTML, CSS, Angular y MongoDB.</p>
-            </div>
-            <div class="project-item">
+                <p>Plataforma web para creadores de videojuegos que permite publicación y descarga de videojuegos, utilizando HTML, CSS, Angular y MongoDB.</p>
+            </article>
+
+            <article class="project-item">
                 <h3>TeleStock</h3>
                 <a href="https://www.behance.net/gallery/209093515/TeleStock" target="_blank">
                     <img src="img/telestock.jpg" alt="TeleStock" class="project-image">
@@ -167,8 +166,26 @@
 
     </div>
 
-    <!-- Scripts personalizados -->
+        <!-- Sección de Contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="mailto:juanparivadeneira@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
+
