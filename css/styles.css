@@ -707,3 +707,137 @@ input[type="email"]:focus {
         font-size: 1rem;
     }
 }
+
+/* Estilos para la barra lateral */
+
+.logos {
+    width: 80%; /* Aumentar el tamaño relativo para que sea más grande */
+    max-width: 450px; /* Aumentar el tamaño máximo */
+    height: auto; /* Mantener la proporción del logo */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transición más suave */
+    margin: 40px auto; /* Añadir espacio en la parte superior e inferior, y centrarlo */
+    display: block; /* Asegura que el logo esté centrado */
+    border-radius: 15px; /* Bordes más redondeados para un toque más moderno */
+}
+
+.logos:hover {
+    transform: scale(1.15); /* Mayor aumento en tamaño para un efecto más llamativo */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+@media (max-width: 768px) {
+    .logos {
+        max-width: 350px; /* Reducir ligeramente en pantallas más pequeñas */
+        margin-top: 30px; /* Ajustar margen superior */
+    }
+}
+
+@media (max-width: 480px) {
+    .logos {
+        max-width: 250px; /* Ajuste para pantallas muy pequeñas */
+        margin-top: 20px; /* Menos espacio superior en pantallas pequeñas */
+    }
+}
+
+.side-nav {
+    background-color: #333; /* Fondo oscuro para la barra lateral */
+    width: 250px; /* Tamaño de la barra lateral */
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: width 0.3s ease; /* Suavizar transición si se ajusta el tamaño */
+}
+
+/* Contenedor del perfil dentro de la barra lateral */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px; /* Separación de la barra lateral */
+    padding: 0 10px; /* Espaciado interno para mejorar la alineación */
+    border-bottom: 2px solid #444; /* Separador sutil entre perfil y opciones */
+}
+
+/* Estilo de la imagen del logo */
+.profile-pic {
+    width: 180px; /* Tamaño del logo ajustado */
+    height: 180px; /* Asegurarse de que la imagen sea cuadrada */
+    background-color: #444; /* Fondo gris oscuro */
+    padding: 10px; /* Espaciado alrededor del logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    object-fit: contain; /* Mantener proporciones de la imagen */
+    border-radius: 50%; /* Hacer la imagen redonda */
+    transition: transform 0.3s ease-in-out; /* Transición suave para efectos */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón (aumenta el tamaño ligeramente) */
+}
+
+/* Estilos para el nombre y el rol debajo del logo */
+.name-container {
+    text-align: center;
+    color: white;
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.role {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Estilo del menú de navegación */
+.nav-links {
+    margin-top: 20px; /* Espaciado superior para las opciones */
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0; /* Eliminar márgenes inferiores */
+}
+
+.nav-links li {
+    margin: 12px 0; /* Menor margen entre las opciones */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, padding-left 0.3s ease; /* Transiciones para color y relleno */
+    padding-left: 10px; /* Añadir relleno a la izquierda para efectos */
+    display: block; /* Hacer que el enlace ocupe toda la anchura */
+}
+
+.nav-links a:hover {
+    color: #1e90ff; /* Color al pasar el ratón */
+    padding-left: 20px; /* Desplazar hacia la derecha al hacer hover */
+}
+
+.nav-links a:focus {
+    outline: none; /* Eliminar el contorno del enlace al hacer clic */
+}
+
+/* Estilo para la información de contacto */
+.contact-info a {
+    color: #b0b0b0; /* Gris claro para el correo */
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+/* Cambiar el color del correo cuando el ratón pasa sobre él */
+.contact-info a:hover {
+    color: #ffffff; /* Gris muy claro al pasar el ratón */
+}
+
